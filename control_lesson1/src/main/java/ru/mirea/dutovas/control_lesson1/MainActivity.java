@@ -7,12 +7,16 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.bumptech.glide.Glide;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
 
         Button button = findViewById(buttonsus);
         button.setText("MireaButton");
+
+        ImageView imageView = findViewById(R.id.imageView);
+
+        // Загрузка GIF из ресурсов
+        Glide.with(this)
+                .asGif()
+                .load(R.drawable.among_us_twerk) // Укажите ваш GIF-файл в папке res/drawable
+                .into(imageView);
 
         CheckBox checkBox = findViewById(R.id.checkBox);
         checkBox.setChecked(true);
