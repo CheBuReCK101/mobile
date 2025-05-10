@@ -17,5 +17,10 @@
             android:id="@+id/nav_webview"
             android:icon="@drawable/ic_web"
             android:title="@string/webview_fragment" />
+
+        <item
+            android:id="@+id/nav_worker"
+            android:icon="@drawable/ic_worker"
+            android:title="Фоновая задача"/>
     </group>
 </menu>
