@@ -27,4 +27,22 @@
         android:name="ru.mirea.dutovas.mireaproject.WorkerFragment"
         android:label="Фоновая задача"
         tools:layout="@layout/fragment_worker" />
+
+    <fragment
+        android:id="@+id/nav_sensor"
+        android:name="ru.mirea.dutovas.mireaproject.SensorFragment"
+        android:label="Компас"
+        tools:layout="@layout/fragment_sensor"/>
+
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="ru.mirea.dutovas.mireaproject.CameraFragment"
+        android:label="Камера"
+        tools:layout="@layout/fragment_camera"/>
+
+    <fragment
+        android:id="@+id/nav_microphone"
+        android:name="ru.mirea.dutovas.mireaproject.MicrophoneFragment"
+        android:label="Микрофон"
+        tools:layout="@layout/fragment_microphone"/>
 </navigation>

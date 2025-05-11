@@ -22,5 +22,21 @@
             android:id="@+id/nav_worker"
             android:icon="@drawable/ic_worker"
             android:title="Фоновая задача"/>
+
+        <item
+            android:id="@+id/nav_sensor"
+            android:icon="@drawable/ic_compass_menu"
+            android:title="Компас"/>
+
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_camera_menu"
+            android:title="Камера"/>
+
+        <item
+            android:id="@+id/nav_microphone"
+            android:icon="@drawable/ic_mic_menu"
+            android:title="Микрофон"/>
+
     </group>
 </menu>
