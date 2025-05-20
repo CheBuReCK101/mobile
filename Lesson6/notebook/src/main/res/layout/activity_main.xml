@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="64dp"
+    android:paddingTop="32dp"
+    tools:context=".MainActivity">
+
+<EditText
+android:id="@+id/filenameEditText"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Название файла"
+android:inputType="text"/>
+
+<EditText
+android:id="@+id/quoteEditText"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Цитата"
+android:inputType="textMultiLine"
+android:minLines="3"/>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginTop="16dp">
+
+<Button
+    android:id="@+id/saveButton"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_marginEnd="8dp"
+    android:text="Сохранить"/>
+
+<Button
+    android:id="@+id/loadButton"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Загрузить"/>
+</LinearLayout>
+
+    </LinearLayout>
