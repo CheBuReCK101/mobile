@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "646105654345",
+    "project_id": "lesson7dutovfirebase",
+    "storage_bucket": "lesson7dutovfirebase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646105654345:android:0baf526e13992ace8a0b98",
+        "android_client_info": {
+          "package_name": "ru.mirea.dutovas.firebaseauth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMZISxIFrJ5MuYrzQpC1xEio-DwhHHZ_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

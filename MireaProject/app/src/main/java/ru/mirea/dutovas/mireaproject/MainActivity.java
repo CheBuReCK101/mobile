@@ -1,13 +1,13 @@
 package ru.mirea.dutovas.mireaproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Menu;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
@@ -58,13 +58,36 @@ public class MainActivity extends AppCompatActivity {
                 R.id.nav_camera,
                 R.id.nav_microphone,
                 R.id.nav_profile,
-                R.id.nav_file_operations)
+                R.id.nav_file_operations,
+                R.layout.fragment_web_data)
                 .setOpenableLayout(drawer)
                 .build();
 
         // Настройка ActionBar и NavigationView
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        // Обработка нажатий на элементы меню (в том числе "Выйти")
+        navigationView.setNavigationItemSelectedListener(item -> {
+            int id = item.getItemId();
+
+            if (id == R.id.nav_logout) {
+                FirebaseAuth.getInstance().signOut(); // Разлогиниваем
+                Toast.makeText(this, "Вы вышли из аккаунта", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(this, LoginActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+                return true;
+            }
+
+            // Остальные пункты — стандартный переход
+            boolean handled = NavigationUI.onNavDestinationSelected(item, navController);
+            if (handled) {
+                drawer.closeDrawers();
+            }
+            return handled;
+        });
 
         // Настройка FAB
         FloatingActionButton fab = binding.appBarMain.fab;

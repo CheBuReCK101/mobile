@@ -48,5 +48,17 @@
             android:icon="@android:drawable/ic_menu_edit"
             android:title="Работа с файлами" />
 
+        <item
+            android:id="@+id/nav_web_data"
+            android:icon="@drawable/ic_web"
+            android:title="Данные из интернета" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Выйти"
+            android:icon="@android:drawable/ic_lock_power_off" />
+
+
+
     </group>
 </menu>

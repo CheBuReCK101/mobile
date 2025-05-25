@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "556198573537",
+    "project_id": "mireaprojectdutov",
+    "storage_bucket": "mireaprojectdutov.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556198573537:android:bb420936d3f58763a44ea0",
+        "android_client_info": {
+          "package_name": "ru.mirea.dutovas.mireaproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzu9sqe3PhfsPi1ZKlWfxZr8mQDKiSzgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
